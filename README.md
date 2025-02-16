@@ -6,7 +6,8 @@ This project focuses on the characterisation of the common source amplifier usin
 
  # Circuit diagram
 
-  ![Screenshot (45)](https://github.com/user-attachments/assets/b188d6d3-412c-4485-9f8f-ce5e27137738)
+![Screenshot (56)](https://github.com/user-attachments/assets/dc9ff2c8-b40b-4a14-9e69-009b69f01c98)
+
 
   # To fix the operating point in saturation region
 
@@ -55,6 +56,18 @@ Through AC analysis we can obtain the frequency responce of the circuit with var
 
 ![Screenshot (54)](https://github.com/user-attachments/assets/094d99fa-97d1-43f6-8e83-7294508dcf1e)
 where the above one is gain plot and below oneis phase plot.
+
+
+# Result
+
+
+ID=5.555 * 10^-5 A
+VDS=1v
+Vin(DC offset)=0.9v
+Gain(large signal analysis)=7.783dB
+
+
+
 
 
 
