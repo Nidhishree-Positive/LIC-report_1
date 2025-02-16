@@ -119,6 +119,8 @@ VDS1=0.9v
 Gain = 20.2929dB
 
 # Inference
+1)In comparison with the circuit 1 , circuit 2 has high gain due to no passive component(resitor ) to limit the gain 
+2) 
 
 
 
