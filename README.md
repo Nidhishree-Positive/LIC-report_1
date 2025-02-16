@@ -67,6 +67,17 @@ Vin(DC offset)=0.9v
 Gain(large signal analysis)=7.783dB
 
 
+# Inference
+
+1) As ID is directly proportional to w (ID=1/2*kn*vov^2)in saturation region and inversly proportional to l , we can decrease or increase the drain current by varying the aspect ratio.If wee decrease the channel length in a MOSFET , the short channel effect namely channel length modulation come into play and result in increment in ID .
+
+2)As we are using a common source amplifier the output waveform is inverted due to phase shift betwenn input and the output.
+
+
+
+
+
+
 
 
 
