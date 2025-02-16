@@ -32,6 +32,40 @@ from the datasheet we got to know that vtn=0.36624 v.
  
  RD=14.414K ohm
 
+ By simulating , we obtained the operating point of the mosfet as given below in the figure ,with aspect ratio of 13/7.
+ ![Screenshot (46)](https://github.com/user-attachments/assets/93988854-fb81-4521-b8f6-5ac9b161bb27)
+
+ 
+# Transient anaysis
+
+By providing a sine wave with DC offset of 0.9v, amplitude 50mv and with frequency 1kHZ in the input we obtained the responc of the circuit with respect to time .
+
+![image](https://github.com/user-attachments/assets/bcd25a03-5797-412c-87b0-0796417c1afb)
+
+The gain of the circuit with the inputas a sine wave of frequency 1kHZ is given by Gain=voutp-p/vinp-p
+Gain=91.120-0.8750/0.1
+Gain=2.44999
+Gain=7.7832dB
+
+
+
+# AC analysis
+
+Through AC analysis we can obtain the frequency responce of the circuit with various range of frequency , here we are providing a frequency range of 0.1-1T HZ.
+
+![image](https://github.com/user-attachments/assets/0202b417-cde6-4270-81f7-0b99695e9b2a)
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
