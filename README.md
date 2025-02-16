@@ -11,7 +11,8 @@ This project focuses on the characterisation of the common source amplifier usin
 
   # To fix the operating point in saturation region
 
-Given pin as 100u watts ,thus pin=VDD*ID 
+Given pin as 100u watts ,thus pin=VDD*ID,
+
 ID=100uwatts/1.8v=5.55*10^-5 A.
 
 from the datasheet we got to know that vtn=0.36624 v.
@@ -20,8 +21,8 @@ from the datasheet we got to know that vtn=0.36624 v.
  VGD<vtn
  VG-VD<0.36624     (here,VG=0.9V)
 
- VD<0.9-0.36624
- VD<0.53376V
+ VD>0.9-0.36624
+ VD>0.53376V
 
  then let's fix our VDS as 1v.
 
@@ -72,6 +73,31 @@ Gain(large signal analysis)=7.783dB
 1) As ID is directly proportional to w (ID=1/2*kn*vov^2)in saturation region and inversly proportional to l , we can decrease or increase the drain current by varying the aspect ratio.If wee decrease the channel length in a MOSFET , the short channel effect namely channel length modulation come into play and result in increment in ID .
 
 2)As we are using a common source amplifier the output waveform is inverted due to phase shift betwenn input and the output.
+
+# Circuit 2
+
+# Circuit Diagram
+
+# To set the DC operating point in Saturation region
+
+for NMOS 
+
+VDS1>VOV
+VD1>0.9-0.36624
+VD1>0.53376 V ,let VD1 be 0.7v
+
+since VD1=VD2,
+
+VD2=0.7v
+
+for PMOS ,
+VSD2>VSG2-|VTP|
+1.8-0.7>1.8-Vb -0.399           (VG2=Vb)
+Vb>0.301
+
+let Vb=0.5v
+
+
 
 
 
