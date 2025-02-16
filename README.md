@@ -120,7 +120,8 @@ Gain = 20.2929dB
 
 # Inference
 1)In comparison with the circuit 1 , circuit 2 has high gain due to no passive component(resitor ) to limit the gain 
-2) 
+2)Bandwidth of circuit 2 is lesser than the bandwidth of circuit 1
+3)we can observe smooth output waveform in circuit 2 as an acive PMOS  load ,has better bandwidth meaning smooth and undistorted waveform.
 
 
 
