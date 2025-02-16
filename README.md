@@ -95,7 +95,34 @@ VSD2>VSG2-|VTP|
 1.8-0.7>1.8-Vb -0.399           (VG2=Vb)
 Vb>0.301
 
-let Vb=0.5v
+let Vb=0.7v
+
+from simulation we got this DC operating point and both the mosfets are in saturation region
+
+![Screenshot (59)](https://github.com/user-attachments/assets/83c28ca6-1ad0-4e2b-a684-df081d440fc2)
+
+# Transient Analysis
+![Screenshot (60)](https://github.com/user-attachments/assets/06f4e7f7-74f3-47b9-8be7-ff2672344e10)
+
+Gain=Vout p-p/Vin p-p
+Gain= (1.4-0.3657)/0.1
+Gain=10.343
+Gain=20.293dB
+
+
+# AC analysis
+![Screenshot (61)](https://github.com/user-attachments/assets/9e170ed4-4fd0-4eca-bdc2-bdc4d2ae4981)
+
+# Result
+ID=5.55 *10^-5 A
+VDS1=0.9v
+Gain = 20.2929dB
+
+# Inference
+
+
+
+
 
 
 
