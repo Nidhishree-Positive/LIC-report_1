@@ -54,6 +54,7 @@ Gain=7.7832dB
 Through AC analysis we can obtain the frequency responce of the circuit with various range of frequency , here we are providing a frequency range of 0.1-1T HZ.
 
 ![Screenshot (54)](https://github.com/user-attachments/assets/094d99fa-97d1-43f6-8e83-7294508dcf1e)
+where the above one is gain plot and below oneis phase plot.
 
 
 
