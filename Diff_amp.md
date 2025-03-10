@@ -63,7 +63,18 @@ Width   (W):  1.8782 µm
 The reason for this observation is ,as we decrease the VG (here it is Vicm) value of a MOSFET in Saturation region the currrent flowing through that transistor will also decreases.AS Voutcm=VDD-ID*RD 
 as ID decreses voutcm inccreases ,and if VG value increases ,it results in high current thus VoutCm decreases and the tail current responds to the changes by loweing its vp when vg decreses and incresing when vg incresing .
 
+**Finding Vicm maximum and minimum values**
+Vicm max
+![image](https://github.com/user-attachments/assets/66d00bfc-0119-4e35-b71d-cfcd5431eb4c)
+Vicm min
+![image](https://github.com/user-attachments/assets/4547f12b-c0cc-4a7d-a65d-20630d086f4c)
+
+
+
 # Gain
+
+![image](https://github.com/user-attachments/assets/3483f9a6-87e5-4c67-a91f-606bdc926fec)
+
 
 
 
