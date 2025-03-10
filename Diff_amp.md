@@ -15,3 +15,10 @@ A differential amplifier is a type of electronic amplifier that amplifies the di
 - **High Common-Mode Rejection Ratio (CMRR):** Useful in reducing noise.
 - **Applications:** Used in **signal processing, sensor interfacing, audio amplification, and operational amplifiers**.
 
+- 
+
+- ![Screenshot 2025-03-10 212407](https://github.com/user-attachments/assets/07ab50d0-db5f-4692-a8ba-e06a2d5d0cd4)
+- ![image](https://github.com/user-attachments/assets/137821c5-27e0-44ea-aacd-9998d186a1ea)
+
+
+
