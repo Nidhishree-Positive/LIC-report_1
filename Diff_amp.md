@@ -17,13 +17,13 @@ A differential amplifier is a type of electronic amplifier that amplifies the di
 
 
 
-  **Design**
+ ## **Design**
 ![1](https://github.com/user-attachments/assets/6d1403f0-fde2-4250-a651-bb2438928f18)
 
 
 
 
-**Circuit Diagram** :
+## **Circuit Diagram** :
 
 - ![image](https://github.com/user-attachments/assets/99956fef-0035-4fb3-b6ed-3ab4fb55d398)
 
@@ -82,9 +82,31 @@ This behavior is essential in differential amplifier circuits and other analog a
 
 
 
-**Finding Vicm maximum and minimum values**
+**Finding Maximum input and output swing**
 
+### Common-Mode Input Voltage Calculation:
+- **Maximum Vicm:**
+  
+  ```
+  Vicm_max = Vocm + Vth = 1.25 + 0.447 = 1.697V
+  ```
+  
+- **Minimum Vicm:**
+  
+  ```
+  Vicm_min = Vth + Vp = 0.447 + 0.4 = 0.847
 
+ - **Maximum input swing =0.856 v**
+  
+-**Maximum vout** 
+Vout_max=Vdd =2.2v
+-**minimum vout**
+Vout_min=Vov=VGS-VT=1.2-0.4-0.477=0.353v
+
+-**Maximum output swing is 1.847 v**
+  
+
+**Through simulation**
 Vicm max
 
 ![image](https://github.com/user-attachments/assets/66d00bfc-0119-4e35-b71d-cfcd5431eb4c)
@@ -93,20 +115,36 @@ Vicm min
 
 ![image](https://github.com/user-attachments/assets/4547f12b-c0cc-4a7d-a65d-20630d086f4c)
 
-**Finding maximum input swing and maximum output swing**
-![image](https://github.com/user-attachments/assets/80f2e143-1f32-4bb3-b083-edf07fac2304)
+
+-# Differential Amplifier Gain Equation 
+The differential gain equation for a **differential amplifier** with a **tail resistor \( R_S \)**, using the **small-signal model**.
+
+## Equation  
+
+The differential voltage gain \( A_v \) is given by:  
 
 
-
-We found that the maximum input swing is 0.38vp-p and Maximum output swing is 1.376v.
-
+A_v = {g_m *R_D}/{1 + 2g_m R_S}
 
 
+Where:  
+- \( g_m \) = Transconductance of the MOSFET  
+- \( R_D \) = Drain resistance  
+- \( R_S \) = Tail resistor (source resistance in MOSFET)  
+
+## Observations  
+- **Without \( R_S \) (ideal current source at the tail):**  
+  \[
+  A_v = g_m * R_D
+  \]
+- **With \( R_S \):** The gain decreases due to degeneration.  
+- **If \( R_S \) is large**, gain is significantly reduced.  
+- **If \( R_S \) is small**, gain is close to \( g_m R_D \).  
+
+## Conclusion  
+The presence of a **tail resistor \( R_S \)** reduces the differential gain by introducing **negative feedback**.
 
 
-# Gain
-
-![image](https://github.com/user-attachments/assets/3483f9a6-87e5-4c67-a91f-606bdc926fec)
 
 
 
