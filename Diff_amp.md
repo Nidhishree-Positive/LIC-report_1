@@ -69,6 +69,15 @@ Vicm max
 Vicm min
 ![image](https://github.com/user-attachments/assets/4547f12b-c0cc-4a7d-a65d-20630d086f4c)
 
+**Finding maximum input swing and maximum output swing**
+![image](https://github.com/user-attachments/assets/80f2e143-1f32-4bb3-b083-edf07fac2304)
+
+
+
+We found that the maximum input swing is 0.38vp-p and Maximum output swing is 1.376v.
+
+
+
 
 
 # Gain
