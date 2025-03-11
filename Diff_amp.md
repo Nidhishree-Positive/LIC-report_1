@@ -60,13 +60,33 @@ Width   (W):  1.8782 µm
 
 ![image](https://github.com/user-attachments/assets/8b5b486f-1617-400d-805f-deb1401c2227)
 
-The reason for this observation is ,as we decrease the VG (here it is Vicm) value of a MOSFET in Saturation region the currrent flowing through that transistor will also decreases.AS Voutcm=VDD-ID*RD 
-as ID decreses voutcm inccreases ,and if VG value increases ,it results in high current thus VoutCm decreases and the tail current responds to the changes by loweing its vp when vg decreses and incresing when vg incresing .
+As we decrease the gate voltage (VG), which in this case is Vicm, of a MOSFET operating in the saturation region, the drain current (ID) flowing through the transistor also decreases. This relationship is crucial in understanding the circuit behavior.
+
+
+
+### Key Observations:
+- The output common-mode voltage is given by:
+  
+  ```
+  Vout_cm = VDD - ID * RD
+  ```
+  
+- When \( I_D \) decreases, \( V_{out,cm} \) increases.
+- When \( V_G \) increases, \( I_D \) also increases, leading to a decrease in \( V_{out,cm} \).
+- The tail current responds to these changes:
+  - It lowers its \( V_P \) when \( V_G \) decreases.
+  - It increases \( V_P \) when \( V_G \) increases.
+
+This behavior is essential in differential amplifier circuits and other analog applications where precise control of \( V_G \) is needed to maintain desired output characteristics.
+
+
 
 **Finding Vicm maximum and minimum values**
 Vicm max
+
 ![image](https://github.com/user-attachments/assets/66d00bfc-0119-4e35-b71d-cfcd5431eb4c)
 Vicm min
+
 ![image](https://github.com/user-attachments/assets/4547f12b-c0cc-4a7d-a65d-20630d086f4c)
 
 **Finding maximum input swing and maximum output swing**
