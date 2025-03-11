@@ -18,7 +18,8 @@ A differential amplifier is a type of electronic amplifier that amplifies the di
 
 
   **Design**
-- ![WhatsApp Image 2025-03-10 at 22 37 23_a9d78f3e](https://github.com/user-attachments/assets/6f3a7197-72b1-46cd-8da1-8bff15f8f4d9)
+![1](https://github.com/user-attachments/assets/6d1403f0-fde2-4250-a651-bb2438928f18)
+
 
 
 
@@ -82,9 +83,12 @@ This behavior is essential in differential amplifier circuits and other analog a
 
 
 **Finding Vicm maximum and minimum values**
+
+
 Vicm max
 
 ![image](https://github.com/user-attachments/assets/66d00bfc-0119-4e35-b71d-cfcd5431eb4c)
+
 Vicm min
 
 ![image](https://github.com/user-attachments/assets/4547f12b-c0cc-4a7d-a65d-20630d086f4c)
