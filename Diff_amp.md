@@ -124,7 +124,7 @@ The differential gain equation for a **differential amplifier** with a **tail re
 The differential voltage gain \( A_v \) is given by:  
 
 
-A_v = {g_m *R_D}/{1 + 2g_m R_S}
+A_v = -{g_m *R_D}/{1 + 2g_m R_S}
 
 
 Where:  
@@ -168,7 +168,7 @@ From AC anlysis the Gain we obtained is **12.12db** and bandwidth is **0 to 22.2
 
 
 
-## When Resitor is being replaced with a constant current source
+## When the Resitor is being replaced with a constant current source
 
 
 ### Circuit diagram
@@ -185,7 +185,90 @@ M2 Qpoint: (**1.25V, 0.5mA**)
 Length  (L):  180 nm  ,
 Width   (W):  5.8317 µm
 
+- **When Vicm is reducedd to 1v**
+- ![image](https://github.com/user-attachments/assets/92d1ea02-444e-4433-b7ec-2fb9b2e7e8b9)
+**When Vicm is increased to 1.5v**
+  ![image](https://github.com/user-attachments/assets/34485884-bab8-440b-adb1-cf90e007fd34)
+
+  In a **MOSFET-based differential amplifier with a constant current source**, when the **common-mode input voltage (V_ICM) is changed**, the output voltage (**V_out**) remains constant, but the positive input voltage (**V_P**) varies accordingly. This behavior can be explained as follows:
+
+### Explanation
+
+1. **Constant Current Source Effect**
+   - The current source ensures that the total tail current remains **constant**, independent of V_ICM (within operating limits).
+   - As a result, the sum of the currents through both transistors remains fixed.
+
+2. **Effect on Input Transistors**
+   - When **V_ICM decreases**, both the gate and source voltages of the MOSFETs decrease.
+   - When **V_ICM increases**, both the gate and source voltages increase accordingly.
+   - Since the tail current is constant, the source voltage **tracks** the gate voltage variation.
+
+3. **Why V_P Varies but V_out Remains Constant**
+   - **V_P (the voltage at the non-inverting input)** decreases when V_ICM decreases and increases when V_ICM increases.
+   - However, **V_out remains constant** because the differential pair's operation is mainly determined by the **differential mode voltage (V_id = V_P - V_N)** rather than the common-mode voltage.
+   - The **current division** between the two MOSFETs does not change, so the output voltage (which depends on the drain currents) remains stable.
+
+#### Key Takeaway
+- **V_P follows the variation in V_ICM**: It decreases when V_ICM decreases and increases when V_ICM increases.
+- **V_out remains unchanged** due to the **common-mode rejection property** of differential amplifiers.
+
+## Gain Equation
+
+The differential voltage gain (**A_d**) of a MOSFET-based differential amplifier is given by:
+
+
+A_d = -g_m *R_D
+
+
+where:
+- **g_m** = transconductance of the MOSFET, given by \( g_m = \frac{2I_D}{V_{GS} - V_{TH}} \)
+- **R_D** = drain resistance
+- **I_D** = drain current
+- **V_{GS}** = gate-to-source voltage
+- **V_{TH}** = threshold voltage of the MOSFET
+
+The common-mode gain (**A_cm**) is ideally low due to the constant current source and is given by:
+
+
+A_{cm} = o ( if we use a ideal current source with infinite output impedance)
+
+
+## Key Takeaway
+- The **differential gain** is primarily determined by **g_m R_D**, while the **common-mode rejection** is enhanced by a high source resistance.
+- Commom mode rejection ration is infinite as A_cm=0 v/v.
+  
+
 ### Transient Analysis
+![image](https://github.com/user-attachments/assets/06d6f8cc-6c49-4759-9594-b0da2124fbbe)
+
+**Gain (A_v) = 346.19v/v=50.786db**
+
+
+### Frequency Responce
+
+![Screenshot 2025-03-11 222029](https://github.com/user-attachments/assets/035d3b4f-573e-435e-851e-0f14b3779968)
+
+## Advantages of Using a Current Source Instead of a Resistor
+
+1. **Higher Common-Mode Rejection Ratio (CMRR)** - Reduces common-mode noise.
+2. **Better Bias Stability** - Ensures a constant operating point.
+3. **Increased Gain** - A current source has high impedance, boosting gain.
+4. **Improved Linearity** - Less distortion due to stable tail current.
+5. **Wider Swing & Lower Offset** - Provides better voltage headroom.
+6. **Power Efficiency** - Reduces voltage drop and power consumption.
+7. 
+**From the above design and analysis we can understand these points**
+
+
+## When Current source replaced with mosfet
+
+#### Circuit Diagram
+
+![image](https://github.com/user-attachments/assets/db49016e-f0ba-4ecf-a48e-14dd69a886ff)
+
+
+
+
 
 
 
