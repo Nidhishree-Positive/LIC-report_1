@@ -156,7 +156,7 @@ and **VG2=Vicm-0.144**
 
 
 
-**A_v = 4.107v/v=12.27db**
+**A_v = 4.001v/v=12.04db**
 
 ## AC Analysis
 
@@ -241,7 +241,7 @@ A_{cm} = o ( if we use a ideal current source with infinite output impedance)
 ### Transient Analysis
 ![image](https://github.com/user-attachments/assets/06d6f8cc-6c49-4759-9594-b0da2124fbbe)
 
-**Gain (A_v) = 346.19v/v=50.786db**
+**Gain (A_v) = 4.025v/vv/v= 12.095db**
 
 
 ### Frequency Responce
@@ -265,6 +265,110 @@ A_{cm} = o ( if we use a ideal current source with infinite output impedance)
 #### Circuit Diagram
 
 ![image](https://github.com/user-attachments/assets/db49016e-f0ba-4ecf-a48e-14dd69a886ff)
+
+### DC Analysis
+
+![image](https://github.com/user-attachments/assets/11fab853-c312-4a21-942b-410250a371db)
+
+Transistor Operating Points --
+M1 Qpoint:(**1.25V, 0.5mA**)  ,
+M2 Qpoint: (**1.25V, 0.5mA**)
+
+-- Transistor Dimensions --
+M1 & M2
+Length  (L):  740 nm  ,
+Width   (W): 19.99 µm
+
+M3
+Length  (L):  500.1005nm ,
+Width   (W): 41.054 µm
+
+**When Vi_cm is reduced to 1v**
+
+![image](https://github.com/user-attachments/assets/79565146-8088-43d8-b3d2-63649a940766)
+**When Vi_cm is incresed to 1.4v**
+![image](https://github.com/user-attachments/assets/efba8a80-301a-4d6c-8335-b43dc30f7dd8)
+The MOSFET in saturation acts as an **active current source**, but its output impedance is lower than an ideal current source.
+- **When V_ICM decreases:**
+  - The gate-source voltage (**V_GS**) of the current source MOSFET decreases.
+  - This reduces the tail current, affecting differential pair operation.
+  - **V_out increases**, **I_D decreases**, and **V_P decreases**.
+- **When V_ICM increases:**
+  - **V_GS** of the current source MOSFET increases, slightly increasing tail current.
+  - **V_out decreases**, **I_D increases**, and **V_P increases**.
+  - This variation can cause **reduced common-mode rejection** and **gain variations**.
+
+
+### Transient Analysis
+
+![image](https://github.com/user-attachments/assets/f3bdc669-72b6-4085-b619-1fb6f3dcdc3c)
+
+**A_v= 5v/v = 13.97db**
+
+### Frequency Responce 
+![image](https://github.com/user-attachments/assets/a76af1da-9751-4818-a21a-0af46541794e)
+ Advantages of Using a MOSFET Current Source Instead of a Resistor
+
+1. **Higher Common-Mode Rejection Ratio (CMRR)** - Reduces common-mode noise.
+2. **Better Bias Stability** - Ensures a constant operating point.
+3. **Increased Gain** - A current source has high impedance, boosting gain.
+4. **Improved Linearity** - Less distortion due to stable tail current.
+5. **Wider Swing & Lower Offset** - Provides better voltage headroom.
+6. **Power Efficiency** - Reduces voltage drop and power consumption.
+7. **Better Current Control** - MOSFETs allow precise tail current control, enhancing performance.
+From the above analysis we can undrstand these points
+
+
+## When we use active load 
+
+### Circuit Diagram
+![image](https://github.com/user-attachments/assets/40d2634d-ae2d-4199-8b83-b328bfa633a7)
+### DC Analysis
+![image](https://github.com/user-attachments/assets/d85b42a6-7b61-4407-92d4-4f926217c162)
+
+
+Transistor Operating Points --
+M1 Qpoint:(**1.25V, 0.5mA**)  
+M2 Qpoint: (**1.25V, 0.5mA**)
+ 
+
+
+
+-- Transistor Dimensions --
+M1 & M2
+Length  (L):  180 nm  ,
+Width   (W): 1000 µm
+
+M5 & M4
+Length  (L):  182.145 nm ,
+Width   (W): 1.05899 µm
+
+M3
+Length  (L):  110.99 nm ,
+Width   (W): 9.499 µm
+
+## Transient Analysis
+![image](https://github.com/user-attachments/assets/322ff4c8-31d0-4660-8ea0-1ecf37430684)
+Av= 19.8744v/v=25.96db (large signalgain with vinp=0.009v)
+
+## Frequency responce
+![image](https://github.com/user-attachments/assets/6ea4cda5-7b54-4d07-86f8-4eb13c0b9744)
+
+Gain A-v= 31.98db (small signal gain with AC amplitude 1v)
+Bandwidth 0Hz to 114.2719MHz
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
