@@ -141,8 +141,59 @@ Where:
 - **If \( R_S \) is large**, gain is significantly reduced.  
 - **If \( R_S \) is small**, gain is close to \( g_m R_D \).  
 
-## Conclusion  
+**Conclusion**  
 The presence of a **tail resistor \( R_S \)** reduces the differential gain by introducing **negative feedback**.
+
+## Transient Analysis 
+
+When we applied **VG1=Vicm+0.144**  (Since Vicm_max=1.344v and vicm_min=0.703v and 1.3444-1.2=0.144v(least value),thus we will get a linear output)
+and **VG2=Vicm-0.144**
+
+
+
+![image](https://github.com/user-attachments/assets/62503ed1-320c-4bdf-98ae-c34b14579440)
+
+
+
+
+**A_v = 4.107v/v=12.27db**
+
+## AC Analysis
+
+![image](https://github.com/user-attachments/assets/f4ce08f9-c6f9-477f-a43c-49c350fdbeb3)
+
+
+
+From AC anlysis the Gain we obtained is **12.12db** and bandwidth is **0 to 22.205G Hz**.
+
+
+
+## When Resitor is being replaced with a constant current source
+
+
+### Circuit diagram
+
+![image](https://github.com/user-attachments/assets/5aacb5c9-e15f-4ed4-b440-a5815b4fb5aa)
+### DC Analysis
+![image](https://github.com/user-attachments/assets/303f3f1c-6078-4ef5-9269-f336ee12df8d)
+
+Transistor Operating Points --
+M1 Qpoint:(**1.25V, 0.5mA**)  ,
+M2 Qpoint: (**1.25V, 0.5mA**)
+
+-- Transistor Dimensions --
+Length  (L):  180 nm  ,
+Width   (W):  5.8317 µm
+
+### Transient Analysis
+
+
+
+
+
+
+
+
 
 
 
