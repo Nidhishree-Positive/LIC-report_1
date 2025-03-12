@@ -84,7 +84,9 @@ This behavior is essential in differential amplifier circuits and other analog a
 
 **Finding Maximum input and output swing**
 
+
 ### Common-Mode Input Voltage Calculation:
+
 - **Maximum Vicm:**
   
   ```
@@ -100,6 +102,8 @@ This behavior is essential in differential amplifier circuits and other analog a
   
 -**Maximum vout** 
 Vout_max=Vdd =2.2v
+
+
 -**minimum vout**
 Vout_min=Vov=VGS-VT=1.2-0.4-0.477=0.353v
 
@@ -160,11 +164,10 @@ and **VG2=Vicm-0.144**
 
 ## AC Analysis
 
-![image](https://github.com/user-attachments/assets/f4ce08f9-c6f9-477f-a43c-49c350fdbeb3)
+![image](https://github.com/user-attachments/assets/58457437-bb76-493e-8928-5c6f0be06306)
 
-
-
-From AC anlysis the Gain we obtained is **12.12db** and bandwidth is **0 to 22.205G Hz**.
+The diferential gain is 18.149db 
+Bandwidth is 0Hz to 22.205GHz
 
 
 
@@ -194,13 +197,13 @@ Thus the Maximum input swing is **0.959 vp-p**
 
 ![image](https://github.com/user-attachments/assets/f0b55ad2-78e5-4244-b841-9d9a5f708021)
 **The Maximum output swing is (2.18-0.9v)=1.28vp-p.**
-.
+
 
 
 - **When Vicm is reducedd to 1v**
 - ![image](https://github.com/user-attachments/assets/92d1ea02-444e-4433-b7ec-2fb9b2e7e8b9)
-**When Vicm is increased to 1.5v**
-  ![image](https://github.com/user-attachments/assets/34485884-bab8-440b-adb1-cf90e007fd34)
+- **When Vicm is increased to 1.5v**
+- ![image](https://github.com/user-attachments/assets/34485884-bab8-440b-adb1-cf90e007fd34)
 
   In a **MOSFET-based differential amplifier with a constant current source**, when the **common-mode input voltage (V_ICM) is changed**, the output voltage (**V_out**) remains constant, but the positive input voltage (**V_P**) varies accordingly. This behavior can be explained as follows:
 
@@ -258,7 +261,9 @@ A_{cm} = o ( if we use a ideal current source with infinite output impedance)
 
 ### Frequency Responce
 
-![Screenshot 2025-03-11 222029](https://github.com/user-attachments/assets/035d3b4f-573e-435e-851e-0f14b3779968)
+![image](https://github.com/user-attachments/assets/f95aeb8d-22f5-47a9-8f22-177220c4dff9)
+Differential gain is -857.88mdb
+Bandwidth is 0Hz to 23.48GHz
 
 ## Advantages of Using a Current Source Instead of a Resistor
 
@@ -278,6 +283,20 @@ A_{cm} = o ( if we use a ideal current source with infinite output impedance)
 
 ![image](https://github.com/user-attachments/assets/db49016e-f0ba-4ecf-a48e-14dd69a886ff)
 
+**Gate-Source Voltage (Vb) Condition**:
+- For **MOSFET M3** to be in saturation, the **Gate-Source Voltage (Vb)** must satisfy the following conditions:
+  
+  1. **Condition 1: \( V_b \) >= \( V_{threshold} \)**  
+     The **Gate Voltage (Vb)** must be greater than the **threshold voltage (V_{threshold})** of the MOSFET for it to turn on.
+     
+     - Given that \( V_{threshold} = 0.422V \), the minimum value of \( V_b \) is \( 0.422V \).
+  
+  2. **Condition 2: \( V_{gd} \) <= \( V_{threshold} \)**  
+     The **Gate-Drain Voltage (Vgd)** should be less than the threshold voltage for the MOSFET to remain in the saturation region.
+     
+     - The **Drain Voltage (Vd)** is given as \( 0.4V \), and the **threshold voltage (V_{threshold})** is \( 0.422V \).
+     - This gives the condition \( V_b <= V_{threshold} + V_d \), or \( V_b <= 0.822V \).
+
 ### DC Analysis
 
 ![image](https://github.com/user-attachments/assets/11fab853-c312-4a21-942b-410250a371db)
@@ -296,7 +315,7 @@ Length  (L):  500.1005nm ,
 Width   (W): 41.054 µm
 
 
-**Finding Maximum input swing and output swing**
+#### Finding Maximum input swing and output swing
 
 ![image](https://github.com/user-attachments/assets/37bce295-95f4-4af4-86fe-1d34807b4fea)
 ![image](https://github.com/user-attachments/assets/c837b2d9-80a5-4053-b2df-dfc25a0446fd)
@@ -329,7 +348,11 @@ The MOSFET in saturation acts as an **active current source**, but its output im
 **A_v= 5v/v = 13.97db**
 
 ### Frequency Responce 
-![image](https://github.com/user-attachments/assets/a76af1da-9751-4818-a21a-0af46541794e)
+
+![image](https://github.com/user-attachments/assets/d50dc254-fea8-4130-aacc-9cf6f07e628e)
+The differential gain is 20.024db.
+ 
+
  Advantages of Using a MOSFET Current Source Instead of a Resistor
 
 1. **Higher Common-Mode Rejection Ratio (CMRR)** - Reduces common-mode noise.
@@ -370,7 +393,8 @@ M3
 Length  (L):  110.99 nm ,
 Width   (W): 9.499 µm
 
-**Finding Maximum input swing**
+#### Finding Maximum input swing and Maximum output swing
+
 Vin_max
 ![image](https://github.com/user-attachments/assets/4e603566-87c0-45c6-ae42-e55305f6e9fc)
 VIn_min
@@ -391,11 +415,11 @@ Av= 19.8744v/v=25.96db (large signalgain with vinp=0.009v)
 ## Frequency responce
 ![image](https://github.com/user-attachments/assets/6ea4cda5-7b54-4d07-86f8-4eb13c0b9744)
 
-Gain A-v= 31.98db (small signal gain with AC amplitude 1v)
+Gain A-v= 32.11db (small signal gain with AC amplitude 1v)
 Bandwidth 0Hz to 114.2719MHz
 
 
-In a differential amplifier, PMOS transistors are preferred as active loads instead of resistors due to their superior performance and PMOS active loads enhance gain, reduce chip area, and improve voltage swing, making them ideal for differential amplifiers in IC design.
+In a differential amplifier, PMOS transistors are preferred as active loads instead of resistors due to their superior performance and PMOS active loads enhance **gain, reduce chip area, and improve voltage swing** making them ideal for differential amplifiers in IC design.
 
 
 
