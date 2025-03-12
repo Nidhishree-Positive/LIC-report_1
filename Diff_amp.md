@@ -362,6 +362,24 @@ In a differential amplifier, PMOS transistors are preferred as active loads inst
 
 
 
+## Comparison
+
+DC Analysis*
+| Configuration                     | Increase in Vg                                | Decrease in Vg                                | Comparison                                       |
+|----------------------------------|--------------------------------|--------------------------------|------------------------------------------------|
+| With Source Resistors (RS)       | Increases drain current (Id). | Reduces drain current (Id).  | Unstable biasing due to temperature effects.  |
+|                                  | Q-point shifts up but unstable | Q-point shifts down, reducing gain. | Requires careful resistor selection. |
+|                                  | Requires higher supply voltage. | Can move MOSFET into cutoff region. | Gain is lower compared to other configurations. |
+| With Current Source              | Increases drain current, but remains stable due to constant tail current. | Decreases drain current but maintains better stability. | More stable than RS configuration. |
+|                                  | Q-point shifts up slightly.   | Less shift in Q-point compared to RS configuration. | Requires an additional current source for biasing. |
+|                                  |                              |                              | Improved CMRR and gain.  |
+| MOSFET as Current Source         | Provides controlled increase in Id. | Maintains a nearly constant tail current. | Highly stable biasing. |
+|                                  | Q-point remains in saturation region. | Q-point shift is minimal. | Needs a well-designed current mirror. |
+|                                  | More predictable behavior.   | Better temperature compensation. | Improved performance over passive resistor loads. |
+| MOSFET as Current Source & Active Load | Best biasing stability. | Q-point remains nearly constant due to high output resistance. | The most stable configuration. |
+|                                  | Very high gain, minimal Q-point variation. | Best overall performance. | Maximizes gain and voltage swing. |
+|                                  | Maximizes voltage headroom. | Requires careful design to optimize performance. | |
+
 
 
 
