@@ -358,18 +358,10 @@ Gain A-v= 31.98db (small signal gain with AC amplitude 1v)
 Bandwidth 0Hz to 114.2719MHz
 
 
-Why PMOS Active Loads Are Used
-- In a differential amplifier, an **active load** provides high impedance, replacing a passive resistor.
-- PMOS transistors are used as active loads in **NMOS differential pairs** to enhance gain and performance.
-- A **current mirror load** improves **matching** and ensures equal current flow in both branches.
+In a differential amplifier, PMOS transistors are preferred as active loads instead of resistors due to their superior performance and PMOS active loads enhance gain, reduce chip area, and improve voltage swing, making them ideal for differential amplifiers in IC design.
 
-### Advantages of PMOS Active Loads
-1. **Higher Gain** - PMOS active loads have high output impedance, boosting the amplifier's voltage gain.
-2. **Lower Power Consumption** - Requires less voltage headroom compared to resistive loads.
-3. **Better Matching** - PMOS current mirrors ensure **precise current balancing**.
-4. **Wider Output Swing** - Allows for a greater range of output voltage variations.
-5. **Smaller Chip Area** - Reduces the need for large resistors in IC design.
-6. **Enhanced Common-Mode Rejection** - Improves circuit stability and performance under varying input conditions.
+
+
 
 
 
