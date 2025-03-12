@@ -7,10 +7,10 @@ A differential amplifier is a type of electronic amplifier that amplifies the di
 
 ## Key Characteristics:
 - **Differential Mode Operation:** Amplifies the voltage difference between two inputs:  
-  \[
-  V_{out} = A_d (V_1 - V_2)
-  \]
-  where \( A_d \) is the differential gain.
+
+  V_out = A_d (V_1 - V_2)
+ 
+  where ( A_d ) is the differential gain.
 - **Common-Mode Rejection:** It rejects common signals that appear on both inputs.
 - **High Common-Mode Rejection Ratio (CMRR):** Useful in reducing noise.
 - **Applications:** Used in **signal processing, sensor interfacing, audio amplification, and operational amplifiers**.
@@ -30,7 +30,7 @@ A differential amplifier is a type of electronic amplifier that amplifies the di
 
 
 
-## DC Analysis
+### DC Analysis
 
 Transistor Operating Points --
 M1 Qpoint:(**1.25V, 0.5mA**)  ,
@@ -119,7 +119,7 @@ Vicm min
 -# Differential Amplifier Gain Equation 
 The differential gain equation for a **differential amplifier** with a **tail resistor \( R_S \)**, using the **small-signal model**.
 
-## Equation  
+### Equation  
 
 The differential voltage gain \( A_v \) is given by:  
 
@@ -132,7 +132,7 @@ Where:
 - \( R_D \) = Drain resistance  
 - \( R_S \) = Tail resistor (source resistance in MOSFET)  
 
-## Observations  
+### Observations  
 - **Without \( R_S \) (ideal current source at the tail):**  
   \[
   A_v = g_m * R_D
@@ -184,6 +184,18 @@ M2 Qpoint: (**1.25V, 0.5mA**)
 -- Transistor Dimensions --
 Length  (L):  180 nm  ,
 Width   (W):  5.8317 µm
+
+**Finding maximum input swing and Maximum out swing**
+![image](https://github.com/user-attachments/assets/0b1ae400-ee46-464c-b9ef-d6ece6b021ce)
+![image](https://github.com/user-attachments/assets/eff4d8e2-3535-4b35-aff0-17a68481450d)
+
+Thus the Maximum input swing is **0.959 vp-p**
+
+
+![image](https://github.com/user-attachments/assets/f0b55ad2-78e5-4244-b841-9d9a5f708021)
+**The Maximum output swing is (2.18-0.9v)=1.28vp-p.**
+.
+
 
 - **When Vicm is reducedd to 1v**
 - ![image](https://github.com/user-attachments/assets/92d1ea02-444e-4433-b7ec-2fb9b2e7e8b9)
@@ -282,6 +294,13 @@ Width   (W): 19.99 µm
 M3
 Length  (L):  500.1005nm ,
 Width   (W): 41.054 µm
+
+
+**Finding Maximum input swing and output swing**
+
+![image](https://github.com/user-attachments/assets/37bce295-95f4-4af4-86fe-1d34807b4fea)
+![image](https://github.com/user-attachments/assets/c837b2d9-80a5-4053-b2df-dfc25a0446fd)
+**Through DC Sweep we got the maximum input swing as 0.769vp-p**
 
 **When Vi_cm is reduced to 1v**
 
