@@ -300,10 +300,14 @@ Width   (W): 41.054 µm
 
 ![image](https://github.com/user-attachments/assets/37bce295-95f4-4af4-86fe-1d34807b4fea)
 ![image](https://github.com/user-attachments/assets/c837b2d9-80a5-4053-b2df-dfc25a0446fd)
-**Through DC Sweep we got the maximum input swing as 0.769vp-p**
+**The maximum input swing as 0.769vp-p**
+
+![image](https://github.com/user-attachments/assets/8ba2fa16-4c90-42f9-a8b7-58aa0b33885b)
+**The Maximum output swing is 1.2528vp-p**
+
+
 
 **When Vi_cm is reduced to 1v**
-
 ![image](https://github.com/user-attachments/assets/79565146-8088-43d8-b3d2-63649a940766)
 **When Vi_cm is incresed to 1.4v**
 ![image](https://github.com/user-attachments/assets/efba8a80-301a-4d6c-8335-b43dc30f7dd8)
@@ -365,6 +369,20 @@ Width   (W): 1.05899 µm
 M3
 Length  (L):  110.99 nm ,
 Width   (W): 9.499 µm
+
+**Finding Maximum input swing**
+Vin_max
+![image](https://github.com/user-attachments/assets/4e603566-87c0-45c6-ae42-e55305f6e9fc)
+VIn_min
+![image](https://github.com/user-attachments/assets/5fe0c767-fdf6-462c-9abe-cb90d5746516)
+**Maximum input swing is 0.914vp-p**
+
+**Finding maximum output swing**
+![image](https://github.com/user-attachments/assets/7236d24b-b9c8-430b-9ad2-824427c4ca2c)
+
+**The Maximum output swing is 1.3652vp-p**
+
+
 
 ## Transient Analysis
 ![image](https://github.com/user-attachments/assets/322ff4c8-31d0-4660-8ea0-1ecf37430684)
