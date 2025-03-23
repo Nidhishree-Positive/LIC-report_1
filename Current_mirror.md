@@ -188,6 +188,46 @@ where for Mosfet M1  w=20um and l=180nm
 b)AC Analysis
 
 ![image](https://github.com/user-attachments/assets/f0d98ccf-994d-4840-877a-921fcd41d227)
+
 ##### The gain is 31.344dB.
 
 
+#### Analysis when length of th emosfet differs retaining the aspect ratio
+
+![image](https://github.com/user-attachments/assets/470a5c1c-0623-4777-a37a-facbd8701419)
+
+
+#### Analysis of copying / mirroring of current when current mirror ratio is varied 
+
+
+
+#### Differential amplifier using Current mirror
+
+a) Circuit diagram
+
+![image](https://github.com/user-attachments/assets/5e85aec2-eec6-4e95-9177-62c464eaea68)
+
+b) DC Analysis
+
+![image](https://github.com/user-attachments/assets/aec12805-b87c-4942-8591-d6e305598e3f)
+
+![image](https://github.com/user-attachments/assets/1200ef08-f85a-4d2f-a246-aac23e2ad918)
+
+Finding vin maximum
+
+
+![Screenshot 2025-03-23 212556](https://github.com/user-attachments/assets/057586c0-8679-45af-9696-3952fda7350e)
+
+##### maximum input swing is 0 to 1.516v
+
+![image](https://github.com/user-attachments/assets/286d8da4-d9e9-4e86-858c-0564f3edd1f2)
+
+##### maximum output swing is 0.886v to 2.17v 
+
+c) Transient Analysis
+
+![image](https://github.com/user-attachments/assets/dfa9b3d2-02fa-4df6-96dd-07c0494c70b8)
+
+d) AC Analysis
+![image](https://github.com/user-attachments/assets/b60e21ad-3f60-4aed-9f91-55dddf5c312d)
+##### Gain is 29.48dB
