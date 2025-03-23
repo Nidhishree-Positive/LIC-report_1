@@ -4,6 +4,7 @@
  The project aims to develop efficient mirror circuits, simulate their performance, and analyze the results in terms of gain, accuracy, and power consumption. The mirror circuits are essential in various applications such as analog signal processing, biasing, and reference generation for different analog circuits like amplifiers and voltage regulators.
 
  ### Design question
+ 
  Design and analyse current mirror circuit as active load in amplifier circuit
 
  ![image](https://github.com/user-attachments/assets/e2d73e61-9f25-4349-953c-d155459e57b7)
@@ -19,6 +20,7 @@ Power Dissipation: 𝑃<1𝑚𝑊
 
 Current Mirror Ratio: 1:1 , 1:2 ,1:3,1:4,2:1
 
+
 #### Design Steps :
 
 Step 1: Power Budget & Total Current
@@ -30,6 +32,7 @@ I_Total = P/ VDD =1mW/1.8v ≈0.56mA
 Since: 𝐼_total= 𝐼_ref+𝐼_x
 
 I_ref =I_x = I_total/2≈0.28mA 
+
 
 
 
@@ -70,6 +73,7 @@ The aspect ratio of MOSFET M3 and M2 is made equal, and 𝑉𝑥=𝑉𝑜𝑢�
 where for Mosfet M3&M2 w=100um and l=180nm
  for Mosfet M1 w=101.628um and l=180nm.
 
+
  #### a) DC analysis
 
  ![image](https://github.com/user-attachments/assets/b32945c8-d131-4ddd-b039-e9958d88d201)
@@ -78,7 +82,7 @@ where for Mosfet M3&M2 w=100um and l=180nm
  
  ![image](https://github.com/user-attachments/assets/03e279a0-5c05-4015-8546-dcc5536321a4)
  
-###### Gain is 29.229 dB
+###### Gain is 29.229 dB and BAdnwidth is 0 to 143.3M HZ.
 
 
 
@@ -106,7 +110,8 @@ b) AC analysis
 
 ![image](https://github.com/user-attachments/assets/5bef8a38-1091-4a86-ac47-26c68f25ec38)
 
-##### gain is 29.469dB.
+##### gain is 29.469dB and Bandwidth is 0 to 11.104M HZ
+
 
 #### 2)Current Mirror Ratio: 1:3
 
@@ -125,15 +130,15 @@ where for Mosfet M3  w=10um and l=180nm
  Mosfet M2  w=30um and l=180nm
  Mosfet M1 w=158.712um and l=180nm.
 
- a)DC analysis
+ ##### a)DC analysis
  
  ![image](https://github.com/user-attachments/assets/9582d59a-64b7-44ac-8f29-cdb5c7ef59fe)
  
-b)AC Analysis
+##### b)AC Analysis
 
 ![image](https://github.com/user-attachments/assets/602c17c2-0e9e-49e5-903a-ee58b140802a)
 
- ##### Gain is 29.648 dB.
+ ##### Gain is 29.648 dB and Bandwidth is 0 to 213.63M HZ
 
 
 #### 2)Current Mirror Ratio: 1:4
@@ -153,15 +158,15 @@ where for Mosfet M3  w=91.0128um and l=180nm
  Mosfet M2  w=400um and l=180nm
  Mosfet M1 w=100um and l=180nm.
 
- a)DC Analysis
+ ###### a)DC Analysis
 
  ![Screenshot 2025-03-23 192524](https://github.com/user-attachments/assets/403ae4ad-0a74-4ee8-85a4-346d175f6203)
 
-b)AC analysis
+##### b)AC analysis
 
 ![Screenshot 2025-03-23 192701](https://github.com/user-attachments/assets/f1f7fbe7-378f-4672-82aa-0b8fe7f01b42)
 
-##### The gain is 30.258dB.
+##### The gain is 30.258dB and Bandwidth is 0 to 34.564M HZ.
 
 
 #### 2)Current Mirror Ratio: 2:1
@@ -181,15 +186,15 @@ where for Mosfet M1  w=20um and l=180nm
  Mosfet M2  w=100um and l=180nm
  Mosfet M3 w=42.9285um and l=180nm.
 
- a)DC Analysis
+ ##### a)DC Analysis
  
  ![image](https://github.com/user-attachments/assets/ed324fb9-c770-41dd-927f-a278694eb6f5)
 
-b)AC Analysis
+##### b)AC Analysis
 
 ![image](https://github.com/user-attachments/assets/f0d98ccf-994d-4840-877a-921fcd41d227)
 
-##### The gain is 31.344dB.
+##### The gain is 31.344dB and Bandwidth is 0 to 410.829M HZ.
 
 
 #### Analysis when length of th emosfet differs retaining the aspect ratio
@@ -236,4 +241,15 @@ c) Transient Analysis
 
 d) AC Analysis
 ![image](https://github.com/user-attachments/assets/b60e21ad-3f60-4aed-9f91-55dddf5c312d)
-##### Gain is 29.48dB
+##### Gain is 29.48dB and Bandwidth is 0 to 1.44G HZ
+
+
+#### Inference
+
+1)we can observe that in some cases current mirroring doesnt happened accurately due to channel length modukation
+
+2)The gain increases with higher current mirror ratios, reaching a maximum of 31.344 dB for a 2:1 ratio, demonstrating the impact of active load selection in amplifier circuits.
+
+3)Differential amplifier implementation using a current mirror as an active load achieves a gain of 29.48 dB, with a maximum input swing of 0 to 1.516V and an output swing of 0.886V to 2.17V, validating the effectiveness of the design.
+
+4)Despite different current mirror ratios, the total power dissipation remains within the 1mW design constraint, validating the circuit’s low-power operation.
