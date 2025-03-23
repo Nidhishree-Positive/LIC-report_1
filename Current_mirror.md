@@ -196,9 +196,15 @@ b)AC Analysis
 
 ![image](https://github.com/user-attachments/assets/470a5c1c-0623-4777-a37a-facbd8701419)
 
+![WhatsApp Image 2025-03-23 at 22 04 23_52b2d672](https://github.com/user-attachments/assets/55b98c43-40fe-4776-a62e-a012acaa9be0)
+
 
 #### Analysis of copying / mirroring of current when current mirror ratio is varied 
 
+![image](https://github.com/user-attachments/assets/fe8a0036-c6a9-4573-8597-96d24b35d810)
+
+
+![WhatsApp Image 2025-03-23 at 22 04 22_429f3496](https://github.com/user-attachments/assets/eaa51c02-b837-45e6-8400-79d88d7feed3)
 
 
 #### Differential amplifier using Current mirror
