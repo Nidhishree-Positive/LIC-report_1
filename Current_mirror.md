@@ -136,8 +136,32 @@ b)AC Analysis
  ##### Gain is 29.648 dB.
 
 
+#### 2)Current Mirror Ratio: 1:4
+
+![Screenshot 2025-03-23 192304](https://github.com/user-attachments/assets/db4ba3fd-d48a-4960-bf43-89ab1f47cb20)
 
 
+since the ration is 1:4
+
+let I_ref=0.111mA and I_x=4*I_ref =0.444mA 
+
+since the I_total is remined same p_total remains same
+
+Here ,The aspect ratio of MOSFET M2 is four times of M3, and 𝑉𝑥=𝑉𝑜𝑢𝑡. 
+
+where for Mosfet M3  w=91.0128um and l=180nm
+ Mosfet M2  w=400um and l=180nm
+ Mosfet M1 w=100um and l=180nm.
+
+ a)DC Analysis
+
+ ![Screenshot 2025-03-23 192524](https://github.com/user-attachments/assets/403ae4ad-0a74-4ee8-85a4-346d175f6203)
+
+b)AC analysis
+
+![Screenshot 2025-03-23 192701](https://github.com/user-attachments/assets/f1f7fbe7-378f-4672-82aa-0b8fe7f01b42)
+
+##### The gain is 30.258dB.
 
 
 
