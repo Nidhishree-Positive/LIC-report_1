@@ -19,32 +19,73 @@ here is the pin diagram of **IC 555**
 ![image](https://github.com/user-attachments/assets/79ba7aa2-2163-4e6b-b4ec-69a2d2c33e2a)
 
 **Internal Circuit of 555 Timer IC**
+
+
 The 555 timer IC consists of:
 
-Voltage Divider: Three equal resistors form a voltage divider providing reference voltages at 1/3 and 2/3 of Vcc.
+**Voltage Divider**: Three equal resistors form a voltage divider providing reference voltages at 1/3 and 2/3 of Vcc.
 
-Two Comparators:
+**Two Comparators**:
 
-Trigger Comparator: Checks if trigger voltage (Pin 2) is below 1/3 Vcc to set the flip-flop.
+**Trigger Comparator**: Checks if trigger voltage (Pin 2) is below 1/3 Vcc to set the flip-flop.
 
-Threshold Comparator: Checks if threshold voltage (Pin 6) is above 2/3 Vcc to reset the flip-flop.
+**Threshold Comparator**: Checks if threshold voltage (Pin 6) is above 2/3 Vcc to reset the flip-flop.
 
-SR Flip-Flop: Controls output state based on comparator inputs.
+**SR Flip-Flop**: Controls output state based on comparator inputs.
 
-Discharge Transistor: Connected to Pin 7; turns ON to discharge timing capacitor when output is LOW and OFF when output is HIGH.
+**Discharge Transistor**: Connected to Pin 7; turns ON to discharge timing capacitor when output is LOW and OFF when output is HIGH.
 
-Output Stage: Push-pull transistor provides the output signal on Pin 3.
+**Output Stage**: Push-pull transistor provides the output signal on Pin 3.
 
-Control Voltage (Pin 5): Allows external adjustment of the 2/3 Vcc threshold voltage for timing control.
+**Control Voltage (Pin 5)**: Allows external adjustment of the 2/3 Vcc threshold voltage for timing control.
 
 Operation.
-Operation:
+
+
+**Operation**:
 
 * When Pin 2 voltage < 1/3 Vcc → Output goes HIGH, discharge transistor OFF (capacitor charges).
 
 * When Pin 6 voltage > 2/3 Vcc → Output goes LOW, discharge transistor ON (capacitor discharges).
 
 This internal setup enables the 555 timer to work as a stable oscillator or timer.
+
+555 Timer Working
+The NE555 timer IC generally operates in 3 modes:
+
+1.Astable Mode
+2.Monostable Mode
+3.Bi-stable modes
+
+
+### Monostable Mode (One-Shot Mode) of IC 555
+
+**Operation**:
+The 555 timer produces a single output pulse of a fixed duration in response to a trigger input (a negative pulseThis configuration consists of one stable and one unstable state. The stable state can be chosen as either high or low by the user. If the stable output is set at high (1), the output of the timer is high (1).
+
+**Trigger**: A negative pulse at the trigger pin (Pin 2) starts the timing cycle.
+**Output**: The output (Pin 3) goes HIGH for a time period 𝑇=1.1×𝑅×𝐶 then returns LOW.
+**Applications**: Pulse generation, timers, switch debouncing, missing pulse detection.
+
+**Timing Components**: One resistor (R) and one capacitor (C) determine the pulse width.
+
+### Astable Mode (Free Running Oscillator) of IC 555
+
+**Operation**:
+The 555 timer continuously oscillates between HIGH and LOW states without any external trigger, generating a square wave (pulse train).This means there will be no stable level of output. So the output will be swinging between high and low. This character of unstable output is used as a clock or square wave output for many applications.
+
+**Output**: The output (Pin 3) produces a continuous series of pulses with frequency and duty cycle controlled by two resistors and one capacitor.
+
+Frequency & Duty Cycle:Frequency 𝑓=1.44/(𝑅1+2𝑅2)𝐶f , Duty Cycle depends on 𝑅1 and 𝑅2 .
+**Applications**: Clock pulses, LED flashers, tone generation, PWM signals.
+
+**Timing Components**: Two resistors (R1, R2) and one capacitor (C).
+
+### Bi-stable Mode
+
+In bistable mode, both the output states are stable. At each interrupt, the output changes from low (0) to high (1) and vice versa, and stays there. For example, if we have a high (1) output, it will go low(0) once it receives an interrupt and stays low (0) till the next interrupt changes the status.
+​
+ 
 
 
 
@@ -68,6 +109,8 @@ The overall system comprises three main blocks:
 **Differentiator and Clipper Circuit** – converts the astable square wave into short trigger pulses suitable for monostable operation.
 
 **Monostable 555 Timer Circuit** – produces a single output pulse when triggered, with adjustable duration.
+
+
 
 
 
